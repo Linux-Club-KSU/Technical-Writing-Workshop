@@ -1,0 +1,125 @@
+\documentclass[10pt]{article}
+
+% Minimal useful packages
+\usepackage{graphicx}   % images
+\usepackage{hyperref}   % links
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{LaTeX Quick Cheat Sheet}}
+\end{center}
+
+%====================
+\section*{Document Structure}
+
+\texttt{\textbackslash documentclass\{article\}}
+
+\texttt{\textbackslash section\{...\}}  
+\texttt{\textbackslash subsection\{...\}}  
+\texttt{\textbackslash subsubsection\{...\}}
+
+%====================
+\section*{Text Formatting}
+
+\textbf{Bold} → \texttt{\textbackslash textbf\{...\}}  
+
+\textit{Italic} → \texttt{\textbackslash textit\{...\}}  
+
+\underline{Underline} → \texttt{\textbackslash underline\{...\}}  
+
+\texttt{Monospace} → \texttt{\textbackslash texttt\{...\}}
+
+Line break: \texttt{\textbackslash\textbackslash}
+
+New paragraph: leave a blank line.
+
+%====================
+\section*{Lists}
+
+Bullet list:
+\begin{verbatim}
+\begin{itemize}
+  \item Item
+  \item Item
+\end{itemize}
+\end{verbatim}
+
+Example:
+\begin{itemize}
+  \item Bullet
+  \item Bullet
+    \begin{itemize}
+      \item Nested
+    \end{itemize}
+\end{itemize}
+
+Numbered list:
+\begin{verbatim}
+\begin{enumerate}
+  \item First
+  \item Second
+\end{enumerate}
+\end{verbatim}
+
+%====================
+\section*{Math}
+
+Inline math: $a^2 + b^2 = c^2$
+
+Display math:
+\[
+\int_0^1 x^2 \, dx
+\]
+
+Fractions: $\frac{a}{b}$  
+
+Square root: $\sqrt{x}$  
+
+Greek letters: $\alpha, \beta, \gamma$  
+
+Summation: $\sum_{i=1}^n i$
+
+%====================
+\section*{Tables}
+
+\begin{verbatim}
+\begin{tabular}{|c|c|}
+\hline
+A & B \\
+\hline
+1 & 2 \\
+\hline
+\end{tabular}
+\end{verbatim}
+
+%====================
+\section*{Images}
+
+\texttt{\textbackslash includegraphics[width=0.4\textbackslash textwidth]\{image.png\}}
+
+Example (requires image file):
+% \includegraphics[width=0.3\textwidth]{image.png}
+
+%====================
+\section*{Links}
+
+\texttt{\textbackslash href\{https://example.com\}\{Link Text\}}
+
+Example:
+\href{https://example.com}{Example Link}
+
+%====================
+\section*{Comments}
+
+\texttt{\% This is a comment}
+
+%====================
+\section*{Page Break}
+
+\texttt{\textbackslash newpage}
+
+\end{document}
