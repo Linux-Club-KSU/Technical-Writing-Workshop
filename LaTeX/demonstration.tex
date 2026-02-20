@@ -1,1 +1,152 @@
-\h1 LaTeX Demonstration
+\documentclass{article}
+
+\usepackage{graphicx}   % For images
+\usepackage{xcolor}     % For colors
+\usepackage{hyperref}   % For links
+\usepackage{amsmath}    % For math
+\usepackage{listings}   % For code blocks
+
+\title{LaTeX Syntax Guide}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+This document demonstrates common LaTeX syntax.
+
+\section{Headings}
+
+\section{Level 1 Heading}
+\subsection{Level 2 Heading}
+\subsubsection{Level 3 Heading}
+
+Headings are created using:
+\begin{verbatim}
+\section{...}
+\subsection{...}
+\subsubsection{...}
+\end{verbatim}
+
+\section{Bullet Lists}
+
+Bullet points are created using the itemize environment:
+
+\begin{verbatim}
+\begin{itemize}
+  \item First point
+  \item Second point
+\end{itemize}
+\end{verbatim}
+
+Example:
+
+\begin{itemize}
+  \item This is a bullet point
+  \item This is another bullet point
+    \begin{itemize}
+      \item This is a sub point
+        \begin{itemize}
+          \item This is a sub sub point
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\section{Numbered Lists}
+
+Numbered lists use the enumerate environment:
+
+\begin{verbatim}
+\begin{enumerate}
+  \item First
+  \item Second
+\end{enumerate}
+\end{verbatim}
+
+Example:
+
+\begin{enumerate}
+  \item Lists look like this
+  \item They are created with enumerate
+    \begin{enumerate}
+      \item They can have sub lists
+        \begin{enumerate}
+          \item And even deeper levels
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+\section{Text Formatting}
+
+\textbf{Bold text}
+
+\textit{Italic text}
+
+\texttt{Monospace text}
+
+\textcolor{blue}{Colored text}
+
+You can also write inline code like this: \texttt{let x = 10}
+
+\section{Links}
+
+Links are created using hyperref:
+
+\begin{verbatim}
+\href{https://example.com}{This is a link}
+\end{verbatim}
+
+Example:
+
+\href{https://example.com}{This is a link}
+
+\section{Images}
+
+Images require the graphicx package:
+
+\begin{verbatim}
+\includegraphics[width=0.3\textwidth]{image.png}
+\end{verbatim}
+
+Example:
+
+\includegraphics[width=0.3\textwidth]{./Resume_Tex/profile.png}
+
+\section{Code Blocks}
+
+Code blocks can be created using the listings package:
+
+\begin{verbatim}
+\begin{lstlisting}[language=C]
+#include <stdio.h>
+
+int main() {
+    printf("Hello World");
+    return 0;
+}
+\end{lstlisting}
+\end{verbatim}
+
+Example:
+
+\begin{lstlisting}[language=C]
+#include <stdio.h>
+
+int main() {
+    printf("Hello World");
+    return 0;
+}
+\end{lstlisting}
+
+\section{Math}
+
+Inline math: $a^2 + b^2 = c^2$
+
+Displayed math:
+
+\[
+\int_0^1 x^2 \, dx
+\]
+
+\end{document}
