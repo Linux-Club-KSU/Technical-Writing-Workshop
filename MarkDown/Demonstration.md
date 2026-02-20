@@ -24,7 +24,21 @@ Created using `### text`
     1. They can have sub lists too
         1. They can have sub sub lists too
 
+You can also use `---` to add a seperation line like below
+
+---
+
+if you put `---` right below a line of text, the text will turn into a header like so.
+---
+
 ## Formatting
+* `\` at the end of a line allows for a new line within normal text. \
+text \
+with \
+backslashes \
+text
+without
+backslashes (look at the code)
 * `**text**` makes it **bold**
 * `*text*` makes it *italic*
 * `~~text~~` makes it ~~crossed out~~
