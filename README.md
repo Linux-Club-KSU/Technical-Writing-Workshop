@@ -3,11 +3,11 @@ The working repository for the LCKSU technical writing and resume workshop. Comp
 
 # Requirements
 You must bring your own compilers:
-- ([Typst CLI]https://typst.app/open-source/#download)
-- ([LaTeX Compiler]https://www.latex-project.org/get/)
+- [Typst CLI](https://typst.app/open-source/#download)
+- [LaTeX Compiler](https://www.latex-project.org/get/)
 - or use an *online IDE* for either:
-    - ([Overleaf]https://www.overleaf.com/)
-    - ([Typst Online](https://typst.app/#start))
+    - [Overleaf](https://www.overleaf.com/)
+    - [Typst Online](https://typst.app/#start)
 
 # Key Takeaways:
 - LaTeX is best for inline-math and its extensive packages, more integration with other tools, but is more difficult, and stricter on things like fonts.
